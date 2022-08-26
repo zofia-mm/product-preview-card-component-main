@@ -2,3 +2,106 @@
 /*/ attribution /*/
 div.attribution { font-size: 11px; text-align: center; }
 div.attribution a { color: hsl(228, 45%, 44%); }
+
+/*/ creme background /*/
+body { background: hsl(30, 38%, 92%); }
+
+/*/ preview itself /*/
+div.product-preview
+{
+    width: 40%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+img.product-preview-image
+{
+    float: left;
+    border-radius: 10px 0px 0px 10px;
+    max-width:50%;
+}
+div.product-preview-blurb
+{
+    margin: 15px 25px 25px 25px;
+}
+
+/*/ text /*/
+@font-face { font-family: Montserrat; src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf); }
+@font-face { font-family: Fraunces; src: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf); }
+p.overline
+{
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    letter-spacing: 4px;
+    font-size: 8px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+h2.product-name
+{
+    font-family: "Fraunces";
+    line-height: 98%;
+}
+p.body
+{
+    font-family: "Montserrat";
+    font-size: 10px;
+    line-height: 160%;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+/*/ price /*/
+div.price-row
+{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+h2.price-discounted
+{
+    float: left;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    line-height: 20%;
+}
+p.price-full
+{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-family: "Montserrat";
+    font-size: 10px;
+    margin-left: 15px;
+}
+
+/*/ button /*/
+button.add-to-cart
+{
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    border-style: hidden;
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+p.add-to-cart-text
+{
+    color: white;
+    margin-left: 10px;
+    font-size: 10px;
+    font-family: "Montserrat";
+    font-weight: 700;
+}

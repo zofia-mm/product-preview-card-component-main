@@ -191,6 +191,10 @@ button.add-to-cart
     align-items: center;
     justify-content: center;
 }
+button.add-to-cart:hover
+{
+    filter: brightness(85%);
+}
 p.add-to-cart-text
 {
     color: var(--color-on-primary);

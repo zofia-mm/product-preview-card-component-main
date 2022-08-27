@@ -22,8 +22,8 @@ Live Site URL: [Check out my design!](https://fobya7.github.io/product-preview-c
     <th>Mobile</th>
   </tr>
   <tr>
-    <td width="72%"> <img src="./screenshot-desktop.jpeg"> </td>
-    <td width="28%"> <img src="./screenshot-mobile.jpeg"> </td>
+    <td width="72%"> <img src="readme/screenshot-desktop.jpeg"> </td>
+    <td width="28%"> <img src="readme/screenshot-mobile.jpeg"> </td>
   </tr>
 </table>
 

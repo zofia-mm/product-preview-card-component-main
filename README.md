@@ -80,6 +80,15 @@ Live Site URL: [Check out my design!](https://fobya7.github.io/product-preview-c
 }
 ```
 
+- I really like this part. First I learned about [selectors](https://www.w3schools.com/cssref/sel_hover.asp) and then about [darkening color](https://stackoverflow.com/questions/1625681/dynamically-change-color-to-lighter-or-darker-by-percentage-css) without declaring additional variables.
+
+```css
+button.add-to-cart:hover
+{
+    filter: brightness(85%);
+}
+```
+
 ### Continued development
 
 - **workflow** - Which part of the assignment tackle first? And also doing documentation throughout, not scrambling for details after finishing the project.

@@ -29,14 +29,16 @@ Users should be able to:
 
 ### Screenshots
 
-
-Desktop | Mobile
----     | ---
-![](./screenshot-desktop.jpeg) | ![](./screenshot-mobile.jpeg)
-
-
-<img scr="screenshot-desktop.jpeg">
-
+<table>
+  <tr>
+    <th>Desktop</th>
+    <th>Mobile</th>
+  </tr>
+  <tr>
+    <td width="72%"> <img src="./screenshot-desktop.jpeg"> </td>
+    <td width="28%"> <img src="./screenshot-mobile.jpeg"> </td>
+  </tr>
+</table>
 
 ### Links
 

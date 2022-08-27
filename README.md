@@ -1,22 +1,7 @@
 # Resolution aware product preview card solution with Material Design inspired theming
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). 
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
+For more designs - check out [my profile](https://www.frontendmentor.io/profile/Fobya7) there!
 
 ## Overview
 
@@ -27,7 +12,9 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-### Screenshots
+### Solution
+
+Live Site URL: [Check out my design!](https://fobya7.github.io/product-preview-card-component-main/)
 
 <table>
   <tr>
@@ -40,11 +27,6 @@ Users should be able to:
   </tr>
 </table>
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## My process
 
 ### Built with
@@ -52,61 +34,57 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+- Encapsulating an image in it's own div makes controlling it's size way easier.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="product-preview-image">
+  <img class="product-preview-image" src="images/image-product-desktop.jpg">
+</div>
 ```
+
+- You should start your stylesheet by declaring color variables for your theme. It makes it easier to refrence colors while you're working.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+:root
+{
+    --color-background: hsl(30, 38%, 92%);
+    --color-surface: hsl(0, 0%, 100%);
+    --color-on-surface: hsl(228, 12%, 48%);
+    --color-primary: hsl(158, 36%, 37%);
+    --color-on-primary: hsl(0, 0%, 100%);
+    --color-secondary: hsl(212, 21%, 14%);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- Making a website look great both in mobile & desktop requires seperate styling.
+```css
+@media only screen and ( max-width: 700px )
+{ /* for mobile */
+  .product-preview
+  {
+      width: 100%;
+      flex-direction: column;
+  }
+}
+@media only screen and ( min-width: 701px )
+{ /* for desktop */
+  .product-preview
+  {
+      width: 50%;
+      flex-direction: row;
+  }
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- **workflow** - Which part of the assignment tackle first? And also doing documentation throughout, not scrambling for details after finishing the project.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Material Design [typography](https://material.io/design/typography/the-type-system.html) and [colors](https://material.io/design/color/the-color-system.html) - helped me with mentally organizing the theme and naming its parts,
+- MDN's [Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) - helped me with controlling components based on screen resolution.

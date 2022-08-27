@@ -65,7 +65,7 @@ div.attribution a
 {
     .product-preview
     {
-        max-width: 100%;
+        width: 100%;
         flex-direction: column;
     }
     div.product-preview-image

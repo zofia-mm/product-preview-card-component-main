@@ -12,7 +12,7 @@
     font-family: Fraunces;
     src: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
 }
-h2
+h1
 {
     font-family: "Fraunces";
     font-size: 36px;
@@ -49,9 +49,9 @@ body
 /* #region ATTRIBUTION */
 div.attribution
 {
-    margin-top: 2%;
     font-size: 12px;
     text-align: center;
+    margin-top: 10px;
 }
 div.attribution a
 {
@@ -135,7 +135,7 @@ div.product-preview-blurb
 /* #endregion */
 
 /* #region PRODUCT PREVIEW TEXT */
-h2.product-name
+h1.product-name
 {
     color: var(--color-secondary);
     line-height: 98%;
@@ -160,7 +160,7 @@ div.price-row
     flex-wrap: nowrap;
     align-items: center;
 }
-h2.price-discounted
+h1.price-discounted
 {
     color: var(--color-primary);
     line-height: 20%;
@@ -190,17 +190,13 @@ button.add-to-cart
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    color: var(--color-on-primary);
+    font-family: "Montserrat";
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 button.add-to-cart:hover
 {
     filter: brightness(85%);
-}
-p.add-to-cart-text
-{
-    color: var(--color-on-primary);
-    font-family: "Montserrat";
-    font-weight: 700;
-    margin-left: 15px;
-    letter-spacing: 1px;
 }
 /* #endregion */

@@ -15,7 +15,7 @@
 h1
 {
     font-family: "Fraunces";
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     margin: 10px 0px 10px 0px;
 }
@@ -40,7 +40,11 @@ p
 body
 {
     background-color: var(--color-background);
-    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* #endregion */
@@ -65,12 +69,13 @@ div.attribution a
 {
     .product-preview
     {
-        width: 100%;
+        margin-left: 8px;
+        margin-right: 8px;
         flex-direction: column;
     }
     div.product-preview-image
     {
-        height: 300px;
+        height: 240px;
     }
     img.product-preview-image
     {
@@ -85,7 +90,9 @@ div.attribution a
 {
     .product-preview
     {
-        width: 50%;
+        width: 36rem;
+        margin-left: auto;
+        margin-right: auto;
         flex-direction: row;
     }
     div.product-preview-image
@@ -101,19 +108,10 @@ div.attribution a
         padding: 32px;
     }
 }
-@media only screen and ( min-width: 2000px )
-{
-    .product-preview
-    {
-        width: 30%;
-    }
-}
 div.product-preview
 {
     background-color: var(--color-surface);
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
 }
 img.product-preview-image

@@ -97,3 +97,7 @@ button.add-to-cart:hover
 
 - Material Design [typography](https://material.io/design/typography/the-type-system.html) and [colors](https://material.io/design/color/the-color-system.html) - helped me with mentally organizing the theme and naming its parts,
 - MDN's [Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) - helped me with controlling components based on screen resolution.
+
+## Acknowledgments
+
+Thanks to [@DavidMorgade](https://www.frontendmentor.io/profile/DavidMorgade) for pointers on centering and sizing my solution.

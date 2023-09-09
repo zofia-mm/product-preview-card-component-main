@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Solution
 
-Live Site URL: [Check out my design!](https://fobya7.github.io/product-preview-card-component-main/)
+Live Site URL: [Check out my design!](https://zofia-mm.github.io/product-preview-card-component-main/)
 
 <table>
   <tr>
